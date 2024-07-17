@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
 
-project(examples)
+project(build)
 
 # You can comment/Uncomment this line if you wish to hide/show verbose output
 # add_definitions(-DOPENAI_VERBOSE_OUTPUT=1)
@@ -26,33 +26,11 @@ message("Using compiler ${CMAKE_CXX_COMPILER_ID} ${CMAKE_CXX_COMPILER_VERSION}")
 # endif()
 
 set (SOURCES_EXAMPLES
-    00-showcase
-    01-model
-    02-completion
-    03-edit
-    04-image
-    05-embedding
-    06-file
-    07-fine-tune
-    09-instances
-    10-chat
-    11-audio
-    12-moderation
+    chatbot
 )
 
 set (TARGETS_EXAMPLES
-    00-showcase
-    01-model
-    02-completion
-    03-edit
-    04-image
-    05-embedding
-    06-file
-    07-fine-tune
-    09-instances
-    10-chat
-    11-audio
-    12-moderation
+    chatbot
 )
 
 foreach( name ${TARGETS_EXAMPLES} )
